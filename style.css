@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Raleway', sans-serif;
+  background: black;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  z-index: 2;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #b0fe07;
+  z-index: 2;
+  text-shadow: 2px 2px black;
+  padding-top: 20px;
+}
+
+.converter {
+  height: 100%;
+  width: 100vw;
+  background-image: url('./images/trading.jpg');
+  background-position: fixed;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstCurrency {
+  position: absolute;
+  top: 32%;
+  left: 14%;
+  z-index: 2;
+}
+
+.secondCurrency {
+  position: absolute;
+  height: 600px;
+  width: 100vw;
+  top: 60%;
+  left: 50%;
+  z-index: 2;
+}
+
+.holderOne {
+  background: white;
+  position: absolute;
+  height: 50%;
+  width: 100vw;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.holderTwo {
+  position: absolute;
+  top: 50%;
+  height: 50%;
+  width: 100vw;
+  z-index: 1;
+
+}
+
+.holderThree {
+  background: #86d117;
+  position: absolute;
+  top: 44%;
+  height: 12%;
+  width: 100vw;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.result  {
+  position: absolute;
+  top: 46.5%;
+  left: 40%;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: black;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: black;
+}
+
+.result  p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 2px;
+}
+
+.currencyOne {
+  height: 40px;
+  border-radius: 5px;
+}
+
+.valueOne {
+  height: 40px;
+  padding-left: 4px;
+  border-radius: 5px;
+}
+
+.currencyTwo {
+  height: 40px;
+  border-radius: 5px;
+}
+
+.valueTwo {
+  height: 40px;
+  padding-left: 4px;
+  border-radius: 5px;
+  pointer-events: none;
+}
+
+.conversion {
+  height: 40px;
+  border-radius: 5px;
+  pointer-events: none;
+  background: transparent;
+  color: white;
+  font-size: 1.5rem;
+  border: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .firstCurrency {
+    position: absolute;
+    top: 32%;
+    left: 14%;
+    z-index: 2;
+  }
+
+  .secondCurrency {
+    position: absolute;
+    height: 600px;
+    width: 100vw;
+    top: 60%;
+    left: 14%;
+    z-index: 2;
+  }
+
+  .result  {
+    position: absolute;
+    top: 46.5%;
+    left: 20%;
+    z-index: 2;
+    white-space: nowrap;
+  }
+}
